@@ -31,7 +31,8 @@ android {
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"  
+        versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -92,4 +93,7 @@ dependencies {
 
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
+
+    implementation 'com.android.support:multidex:2.0.1'
+
 }
